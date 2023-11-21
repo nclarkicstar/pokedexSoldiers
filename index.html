@@ -11,6 +11,7 @@
       }
       :root {
         --pokedex_red: #be084e;
+        --pokedex_darker: #a70c48;
         --pokedex_shaded: #950b40;
       }
 
@@ -41,7 +42,11 @@
         line-height: 100%;
         align-items: center;
         gap: 2rem;
-        padding: 1rem;
+        padding: 2rem;
+        max-height: fit-content;
+        border: 10px solid black;
+        border-radius: 10px;
+        /* height: 50vh; */
       }
 
       .imageGrid img {
@@ -57,6 +62,8 @@
         max-width: 100%;
         transition: background-color 0.3s ease;
         max-height: 100%;
+        border-radius: 10px;
+        padding: 1rem;
       }
 
       .gridImage:hover {
@@ -65,7 +72,13 @@
 
       .gridImage {
         height: 100%;
+        background-color: var(--pokedex_darker);
+
+        margin-top: 1rem;
+        margin-bottom: 1rem;
         object-fit: contain;
+        padding: 0;
+        height: 25vh;
       }
     </style>
   </head>
