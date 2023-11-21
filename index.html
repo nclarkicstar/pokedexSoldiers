@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokémon Images</title>
+    <style>
+      @font-face {
+        font-family: "Unown-OVEwA";
+        src: url("fonts/Unown-OVEwA.ttf") format("truetype"); /* Adjust the file path as needed */
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      margin: 0 auto;
+      .image-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
+        width: 90vw;
+        text-align: center;
+      }
+
+      .image-grid img {
+        width: 200px;
+        height: 200px;
+        object-fit: contain;
+      }
+
+      .unownText {
+        font-family: "Unown-OVEwA", sans-serif; /* Use the custom font for the "Buffalo Soldiers" text */
+        font-size: 100px;
+      }
+      .header {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <span class="unownText">Buffalo Soldiers</span>
+    </div>
+    <div class="image-grid">
+      <img src="images/Determinedragon.png" alt="Determinedragon" />
+      <img src="images/Adaptox.png" alt="Adaptox" />
+      <img src="images/Leaderaptor.png" alt="Leaderaptor" />
+      <img src="images/Teamander.png" alt="Teamander" />
+      <img src="images/Friendlebub.png" alt="Friendlebub" />
+      <img src="images/Creativire.png" alt="Creativire" />
+      <img src="images/Curiospike.png" alt="Curiospike" />
+      <img src="images/Optimibright.png" alt="Optimibright" />
+    </div>
+  </body>
+</html>
