@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pokémon Images</title>
     <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      :root {
+        --pokedex_red: #be084e;
+        --pokedex_shaded: #950b40;
+      }
+
       @font-face {
         font-family: "Unown-OVEwA";
         src: url("fonts/Unown-OVEwA.ttf") format("truetype"); /* Adjust the file path as needed */
@@ -12,27 +21,53 @@
         font-style: normal;
       }
 
-      margin: 0 auto;
-      .image-grid {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 10px;
-        width: 90vw;
+      .unownText {
+        font-family: "Unown-OVEwA", sans-serif; /* Use the custom font for the "Buffalo Soldiers" text */
+      }
+      .header {
+        font-size: 5rem;
         text-align: center;
+        max-width: 100vw;
       }
 
-      .image-grid img {
-        width: 200px;
-        height: 200px;
+      .imageGrid {
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        text-align: center;
+        background-color: var(--pokedex_red);
+        width: 50vw;
+        max-width: 100%; /* Limit the maximum width of the grid */
+        line-height: 100%;
+        align-items: center;
+        gap: 2rem;
+        padding: 1rem;
+      }
+
+      .imageGrid img {
+        max-width: 100%;
+        height: 100%;
+        max-height: 100%; /* Limit the maximum height of the images */
         object-fit: contain;
       }
 
-      .unownText {
-        font-family: "Unown-OVEwA", sans-serif; /* Use the custom font for the "Buffalo Soldiers" text */
-        font-size: 100px;
+      .gridImage {
+        margin: 0;
+        padding: 0;
+        max-width: 100%; /* Set the maximum width to 100% for responsiveness */
+        transition: background-color 0.3s ease;
       }
-      .header {
-        text-align: center;
+
+      .gridImage:hover {
+        background-color: var(--pokedex_shaded);
+      }
+
+      .gridImage {
+        /* max-height: 100%; */
+        height: 100%; /* Limit the maximum height of the images */
+        width: 25%%;
+        /* max-width: 100%; */
+        object-fit: contain;
       }
     </style>
   </head>
@@ -40,15 +75,31 @@
     <div class="header">
       <span class="unownText">Buffalo Soldiers</span>
     </div>
-    <div class="image-grid">
-      <img src="images/Determinedragon.png" alt="Determinedragon" />
-      <img src="images/Adaptox.png" alt="Adaptox" />
-      <img src="images/Leaderaptor.png" alt="Leaderaptor" />
-      <img src="images/Teamander.png" alt="Teamander" />
-      <img src="images/Friendlebub.png" alt="Friendlebub" />
-      <img src="images/Creativire.png" alt="Creativire" />
-      <img src="images/Curiospike.png" alt="Curiospike" />
-      <img src="images/Optimibright.png" alt="Optimibright" />
+    <div class="imageGrid">
+      <div class="gridImage">
+        <img src="/images/Determinedragon.png" alt="Determinedragon" />
+      </div>
+      <div class="gridImage">
+        <img src="/images/Adaptox.png" alt="Adaptox" />
+      </div>
+      <div class="gridImage">
+        <img src="/images/Leaderaptor.png" alt="Leaderaptor" />
+      </div>
+      <div class="gridImage">
+        <img src="/images/Teamander.png" alt="Teamander" />
+      </div>
+      <div class="gridImage">
+        <img src="/images/Friendlebub.png" alt="Friendlebub" />
+      </div>
+      <div class="gridImage">
+        <img src="/images/Creativire.png" alt="Creativire" />
+      </div>
+      <div class="gridImage">
+        <img src="/images/Curiospike.png" alt="Curiospike" />
+      </div>
+      <div class="gridImage">
+        <img src="/images/Optimibright.png" alt="Optimibright" />
+      </div>
     </div>
   </body>
 </html>
