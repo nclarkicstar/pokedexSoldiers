@@ -16,13 +16,13 @@
 
       @font-face {
         font-family: "Unown-OVEwA";
-        src: url("fonts/Unown-OVEwA.ttf") format("truetype"); /* Adjust the file path as needed */
+        src: url("fonts/Unown-OVEwA.ttf") format("truetype");
         font-weight: normal;
         font-style: normal;
       }
 
       .unownText {
-        font-family: "Unown-OVEwA", sans-serif; /* Use the custom font for the "Buffalo Soldiers" text */
+        font-family: "Unown-OVEwA", sans-serif;
       }
       .header {
         font-size: 5rem;
@@ -37,7 +37,7 @@
         text-align: center;
         background-color: var(--pokedex_red);
         width: 50vw;
-        max-width: 100%; /* Limit the maximum width of the grid */
+        max-width: 100%;
         line-height: 100%;
         align-items: center;
         gap: 2rem;
@@ -47,15 +47,16 @@
       .imageGrid img {
         max-width: 100%;
         height: 100%;
-        max-height: 100%; /* Limit the maximum height of the images */
+        max-height: 100%;
         object-fit: contain;
       }
 
       .gridImage {
         margin: 0;
         padding: 0;
-        max-width: 100%; /* Set the maximum width to 100% for responsiveness */
+        max-width: 100%;
         transition: background-color 0.3s ease;
+        max-height: 100%;
       }
 
       .gridImage:hover {
@@ -63,10 +64,7 @@
       }
 
       .gridImage {
-        /* max-height: 100%; */
-        height: 100%; /* Limit the maximum height of the images */
-        /* width: 25%; */
-        /* max-width: 100%; */
+        height: 100%;
         object-fit: contain;
       }
     </style>
@@ -83,7 +81,7 @@
         <img src="images/adaptox.png" alt="Adaptox" />
       </div>
       <div class="gridImage">
-        <img src="images/leaderaptor.png" />
+        <img src="images/leaderaptor.png" alt="Leaderaptor" />
       </div>
       <div class="gridImage">
         <img src="images/teamander.png" alt="Teamander" />
