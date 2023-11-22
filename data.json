@@ -1,6 +1,6 @@
 {
   "Determinedragon": {
-    "type": "Determination",
+    "type": "Professional, Determination",
     "abilities": ["Endurance", "Fortitude", "Resilience"],
     "description": "Determinedragon embodies the spirit of perseverance, never yielding under pressure.",
     "skilllevel1Name": "Stamina",
@@ -21,7 +21,7 @@
     ]
   },
   "Adaptox": {
-    "type": "Adaptable",
+    "type": "Professional, Adaptable",
     "abilities": ["Adaptability", "Toxic Boost", "Quick Reflexes"],
     "description": "Adaptox can adapt to various environments and uses its toxic powers to defend itself.",
     "skilllevel1Name": "Agility",
@@ -42,7 +42,7 @@
     ]
   },
   "Leaderaptor": {
-    "type": "Leader",
+    "type": "Professional, Leader",
     "abilities": ["Leadership", "Aerodynamic", "Strategic Planning"],
     "description": "Leaderaptor soars the skies with great speed and is a natural leader among bird Pokémon.",
     "skilllevel1Name": "Command",
@@ -63,7 +63,7 @@
     ]
   },
   "Teamander": {
-    "type": "Teamplayer",
+    "type": "Professional, Teamplayer",
     "abilities": ["Team Spirit", "Flame Body", "Synergy"],
     "description": "Teamander’s fiery spirit rallies its companions, and its flame-covered body keeps foes at bay.",
     "skilllevel1Name": "Collaboration",
@@ -84,7 +84,7 @@
     ]
   },
   "Friendlebub": {
-    "type": "Friendly",
+    "type": "Personal, Friendly",
     "abilities": ["Friendship", "Healing Aura", "Empathy"],
     "description": "Friendlebub's presence brings joy and healing, making it a beloved companion.",
     "skilllevel1Name": "Social Skills",
@@ -105,7 +105,7 @@
     ]
   },
   "Creativire": {
-    "type": "Creative",
+    "type": "Personal, Creative",
     "abilities": ["Creativity", "Mind Bend", "Imagination"],
     "description": "Creativire uses its psychic powers to unleash creative energy and outsmart opponents.",
     "skilllevel1Name": "Innovation",
@@ -126,7 +126,7 @@
     ]
   },
   "Curiospike": {
-    "type": "Curiosity",
+    "type": "Personal, Curiosity",
     "abilities": ["Curiosity", "Static", "Investigation"],
     "description": "Curiospike's electric nature is matched by its boundless curiosity and ability to generate powerful shocks.",
     "skilllevel1Name": "Inquisitiveness",
@@ -147,7 +147,7 @@
     ]
   },
   "Optimibright": {
-    "type": "Optimism",
+    "type": "Personal, Optimism",
     "abilities": ["Optimism", "Radiance", "Inspirational Aura"],
     "description": "Optimibright shines bright even in the darkest times, inspiring hope with its radiant light.",
     "skilllevel1Name": "Positive Influence",
