@@ -168,7 +168,7 @@
     ]
   },
   "addachu": {
-    "type": "Light",
+    "type": "Nomal",
     "abilities": ["Linkedin"],
     "description": "https://www.linkedin.com/in/nathanclark88",
     "skilllevel1Name": "Positive Influence",
