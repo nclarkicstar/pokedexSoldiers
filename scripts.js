@@ -82,8 +82,10 @@ function openEggOverlay() {
       if (pokemonData) {
         overlayText.innerHTML = `
                     <h3 class="type">Type: ${pokemonData.type}</h3>
-                    <h4>Abilities: ${pokemonData.abilities.join(", ")}</h4>
-                    <p>${pokemonData.description}</p>
+                    <h4>LinkedIn: ${pokemonData.abilities.join(", ")}</h4>
+                    <a target="_blank" href=${pokemonData.description}>${
+          pokemonData.description
+        }</a>
                     <h4>Github:</h4>
                     <ul>${pokemonData.strengths
                       .map(
@@ -91,9 +93,12 @@ function openEggOverlay() {
                           `<li><a target="_blank" href=${strength}>${strength}</a></li>`
                       )
                       .join("")}</ul>
-                      <h4>Weaknesses:</h4>
+                      <h4>Email:</h4>
                       <ul>${pokemonData.weaknesses
-                        .map((weakness) => `<li>${weakness}</li>`)
+                        .map(
+                          (weakness) =>
+                            `<li><a href=mailto:${weakness}>${weakness}</a></li>`
+                        )
                         .join("")}</ul>
                         
                         <!--  
