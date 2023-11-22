@@ -1,3 +1,8 @@
+//
+//
+//
+//
+//
 document.addEventListener("DOMContentLoaded", () => {
   document.querySelectorAll(".gridImage").forEach((item) => {
     item.addEventListener("click", openOverlay);
@@ -9,6 +14,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const eggImage = document.getElementById("eggImage");
   eggImage.addEventListener("click", openEggOverlay);
+
+  // Add a keydown event listener to the document
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape" || event.keyCode === 27) {
+      closeOverlay();
+    }
+  });
 });
 
 function openOverlay() {
@@ -164,3 +176,14 @@ function closeOverlay() {
     overlay.style.display = "none";
   }, 500);
 }
+
+// Add a click event listener to the closeOverlay button
+var closeOverlayButton = document.getElementById("closeOverlay");
+closeOverlayButton.addEventListener("click", closeOverlay);
+
+// Add a keydown event listener to the document
+document.addEventListener("keydown", function (event) {
+  if (event.key === "Escape" || event.keyCode === 27) {
+    closeOverlay();
+  }
+});

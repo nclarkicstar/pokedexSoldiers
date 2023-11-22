@@ -102,8 +102,46 @@ body {
   cursor: pointer;
 }
 
+.gridImage.focused {
+  background-color: var(--pokedex_shaded);
+  animation: flashBorder 1s infinite linear;
+}
 .gridImage:hover {
   background-color: var(--pokedex_shaded);
+  animation: flashBorder 1s infinite linear;
+}
+@keyframes flashBorder {
+  0% {
+    outline: 2px dashed white;
+    outline-style: dashed;
+    outline-width: 5px;
+    border-radius: 0;
+  }
+  49% {
+    outline: 2px dashed white;
+    outline-style: dashed;
+    outline-width: 5px;
+    border-radius: 0;
+  }
+
+  50% {
+    outline: 2px dashed rgba(255, 255, 255, 0);
+    outline-style: dashed;
+    outline-width: 5px;
+    border-radius: 0;
+  }
+  99% {
+    outline: 2px dashed rgba(255, 255, 255, 0);
+    outline-style: dashed;
+    outline-width: 5px;
+    border-radius: 0;
+  }
+  100% {
+    outline: 2px dashed white;
+    outline-style: dashed;
+    outline-width: 5px;
+    border-radius: 0;
+  }
 }
 
 .gridImage {
@@ -483,3 +521,14 @@ body {
 ::-webkit-scrollbar {
   display: none;
 }
+
+/*  */
+/*  */
+/*  */
+/*  */
+/* .arrow-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+} */
