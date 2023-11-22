@@ -69,7 +69,7 @@ function openOverlay() {
 }
 
 function openEggOverlay() {
-  const pokemonName = "addachu";
+  const pokemonName = "Nathan";
   const overlay = document.getElementById("pokemonOverlay");
 
   document.getElementById("overlayName").textContent = pokemonName;
@@ -86,12 +86,16 @@ function openEggOverlay() {
                     <p>${pokemonData.description}</p>
                     <h4>Strengths:</h4>
                     <ul>${pokemonData.strengths
-                      .map((strength) => `<li>${strength}</li>`)
+                      .map(
+                        (strength) =>
+                          `<li><a target="_blank" href=${strength}>${strength}</a></li>`
+                      )
                       .join("")}</ul>
                       <h4>Weaknesses:</h4>
                       <ul>${pokemonData.weaknesses
                         .map((weakness) => `<li>${weakness}</li>`)
                         .join("")}</ul>
+                        
                         <div class="skill-bars">
                         <p>Skills</p>
                           ${createSkillBar(
