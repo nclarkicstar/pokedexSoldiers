@@ -30,31 +30,32 @@ function openOverlay() {
       const pokemonData = data[pokemonName];
       if (pokemonData) {
         overlayText.innerHTML = `
-            <h3>Type: ${pokemonData.type}</h3>
+            <h3 class="type">Type: ${pokemonData.type}</h3>
             <h4>Abilities: ${pokemonData.abilities.join(", ")}</h4>
             <p>${pokemonData.description}</p>
-            <div class="skill-bars">
-              ${createSkillBar(
-                pokemonData.skilllevel1Name,
-                pokemonData.skilllevel1Level
-              )}
-              ${createSkillBar(
-                pokemonData.skilllevel2Name,
-                pokemonData.skilllevel2Level
-              )}
-              ${createSkillBar(
-                pokemonData.skilllevel3Name,
-                pokemonData.skilllevel3Level
-              )}
-            </div>
             <h4>Strengths:</h4>
             <ul>${pokemonData.strengths
               .map((strength) => `<li>${strength}</li>`)
               .join("")}</ul>
-            <h4>Weaknesses:</h4>
-            <ul>${pokemonData.weaknesses
-              .map((weakness) => `<li>${weakness}</li>`)
-              .join("")}</ul>
+              <h4>Weaknesses:</h4>
+              <ul>${pokemonData.weaknesses
+                .map((weakness) => `<li>${weakness}</li>`)
+                .join("")}</ul>
+                <div class="skill-bars">
+                <p>Skills</p>
+                  ${createSkillBar(
+                    pokemonData.skilllevel1Name,
+                    pokemonData.skilllevel1Level
+                  )}
+                  ${createSkillBar(
+                    pokemonData.skilllevel2Name,
+                    pokemonData.skilllevel2Level
+                  )}
+                  ${createSkillBar(
+                    pokemonData.skilllevel3Name,
+                    pokemonData.skilllevel3Level
+                  )}
+                </div>
           `;
       }
     })
