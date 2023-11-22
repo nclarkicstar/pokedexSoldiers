@@ -412,16 +412,22 @@ h4 {
   }
 
   /* #pokemonOverlay {
-  } */
+    } */
+
+  #overlayImage {
+    margin-top: 1rem;
+  }
 
   #overlayContent {
+    height: 85%;
     width: 80vw;
     flex-direction: column; /* Stack children vertically */
     align-items: center;
+    padding: 0;
   }
   #overlayText {
-    width: 100%;
-    margin: 0 auto;
+    width: 90%;
+    margin: 0.5rem auto;
     text-align: left;
     padding: 0;
     text-align: center;
@@ -447,8 +453,17 @@ h4 {
     margin: 0 auto;
     padding: 0;
   }
+
+  #rightSide {
+    margin: 0 auto;
+    border-top: 9px solid var(--pokedex_darker);
+  }
 }
 
 body {
   overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
