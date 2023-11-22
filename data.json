@@ -166,5 +166,18 @@
       "May underestimate challenges",
       "Tendency to ignore negative aspects"
     ]
+  },
+  "addachu": {
+    "type": "Light",
+    "abilities": ["Linkedin"],
+    "description": "https://www.linkedin.com/in/nathanclark88",
+    "skilllevel1Name": "Positive Influence",
+    "skilllevel1Level": 15,
+    "skilllevel2Name": "Emotional Resilience",
+    "skilllevel2Level": 14,
+    "skilllevel3Name": "Motivation",
+    "skilllevel3Level": 13,
+    "strengths": ["Github", "https://github.com/nclarkicstar"],
+    "weaknesses": ["Email", "nathanclark88@yahoo.com"]
   }
 }
