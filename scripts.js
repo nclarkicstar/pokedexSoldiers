@@ -15,7 +15,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const eggImage = document.getElementById("eggImage");
   eggImage.addEventListener("click", openEggOverlay);
 
-  // Add a keydown event listener to the document
   document.addEventListener("keydown", function (event) {
     if (event.key === "Escape" || event.keyCode === 27) {
       closeOverlay();
@@ -177,11 +176,9 @@ function closeOverlay() {
   }, 500);
 }
 
-// Add a click event listener to the closeOverlay button
 var closeOverlayButton = document.getElementById("closeOverlay");
 closeOverlayButton.addEventListener("click", closeOverlay);
 
-// Add a keydown event listener to the document
 document.addEventListener("keydown", function (event) {
   if (event.key === "Escape" || event.keyCode === 27) {
     closeOverlay();
