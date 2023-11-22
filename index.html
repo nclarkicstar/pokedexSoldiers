@@ -126,7 +126,14 @@
         width: 140vw;
         height: 140vh;
       }
-
+      .pokemonName {
+        display: flex;
+        justify-content: center;
+        height: 100%; /* Adjust this to the height of the parent container if necessary */
+        margin-top: 0; /* Reduced space above the name */
+        margin-bottom: 1rem; /* Adjust this value as needed */
+        padding-top: 0.5rem;
+      }
       @keyframes grass {
         0% {
           translate: -10px 10px;
@@ -172,19 +179,22 @@
           transition: background-color 0.3s ease;
           max-height: 100%;
           border-radius: 10px;
-          /* height: 100%; */
           background-color: var(--pokedex_darker);
           margin: 0;
           margin-top: 1rem;
           margin-bottom: 1rem;
           object-fit: contain;
-          /* padding: 0; */
           height: 20vw;
           width: 20vw;
           padding: 1rem;
         }
         .imageGrid {
           grid-template-columns: repeat(2, 1fr);
+        }
+
+        .pokemonName {
+          margin-bottom: 0; /* Adjust this value as needed */
+          padding-top: 1.5rem;
         }
       }
     </style>
