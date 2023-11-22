@@ -1,13 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Add click event listeners to each grid image
   document.querySelectorAll(".gridImage").forEach((item) => {
     item.addEventListener("click", openOverlay);
   });
 
-  // Event listeners for closing the overlay
   const closeOverlayButton = document.getElementById("closeOverlay");
   closeOverlayButton.addEventListener("click", closeOverlay);
-  closeOverlayButton.addEventListener("touchend", closeOverlay); // Fallback for touch devices
+  closeOverlayButton.addEventListener("touchend", closeOverlay);
 });
 
 function openOverlay() {
@@ -15,7 +13,6 @@ function openOverlay() {
   const pokemonImage = this.querySelector("img").src;
   const overlay = document.getElementById("pokemonOverlay");
 
-  // Set the content for the overlay
   document.getElementById("overlayName").textContent = pokemonName;
   document.getElementById("overlayImage").src = pokemonImage;
   const overlayText = document.getElementById("overlayText");
@@ -85,11 +82,10 @@ function closeOverlay() {
   const overlay = document.getElementById("pokemonOverlay");
   const overlayContent = document.getElementById("overlayContent");
 
-  // Hide the overlay
   overlay.style.opacity = "0";
   overlayContent.style.transform = "translateY(100%)";
 
   setTimeout(() => {
     overlay.style.display = "none";
-  }, 500); // Match this with your longest transition duration
+  }, 500);
 }
