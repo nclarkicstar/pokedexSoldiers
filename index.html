@@ -13,6 +13,8 @@
         --pokedex_red: #be084e;
         --pokedex_darker: #a70c48;
         --pokedex_shaded: #950b40;
+        --sharpBorders: 10px;
+        --smoothBorders: 50px;
       }
 
       @font-face {
@@ -70,7 +72,7 @@
         padding: 2rem;
         max-height: fit-content;
         border: 0.5vw solid black;
-        border-radius: 10px;
+        border-radius: var(--smoothBorders);
         /* height: 50vh; */
       }
 
@@ -89,7 +91,7 @@
         max-width: 100%;
         transition: background-color 0.3s ease;
         max-height: 100%;
-        border-radius: 10px;
+        border-radius: var(--smoothBorders);
         /* height: 100%; */
         background-color: var(--pokedex_darker);
         margin: 0;
@@ -178,7 +180,7 @@
           max-width: 100%;
           transition: background-color 0.3s ease;
           max-height: 100%;
-          border-radius: 10px;
+          border-radius: var(--smoothBorders);
           background-color: var(--pokedex_darker);
           margin: 0;
           margin-top: 1rem;
