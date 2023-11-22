@@ -84,7 +84,7 @@ function openEggOverlay() {
   const overlay = document.getElementById("pokemonOverlay");
 
   document.getElementById("overlayName").textContent = pokemonName;
-  document.getElementById("overlayImage").src = "images/trainer.png";
+  document.getElementById("overlayImage").src = "images/bigTeam.png";
 
   fetch("data.json")
     .then((response) => response.json())
