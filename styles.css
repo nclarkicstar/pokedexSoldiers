@@ -249,12 +249,46 @@ body {
   cursor: pointer;
 }
 #overlayText {
+  padding-left: 20px; /* Adjust as needed */
+  text-align: left;
+  font-family: "minecraft", sans-serif; /* Apply your pixel font */
   width: 70%; /* Remaining space for text */
-  padding: 20px; /* Adjust padding as needed */
   overflow-y: auto; /* In case of overflow */
   /* Other styling for text */
 }
 
+.skill-bars {
+  margin-top: 20px;
+}
+
+.skill {
+  margin-bottom: 10px;
+}
+
+.skill-bar {
+  background-color: #eee;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.skill-fill {
+  background-color: #007bff;
+  height: 20px;
+  border-radius: 4px;
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
+/*  */
 @media only screen and (max-width: 600px) {
   .background {
     overflow-x: hidden;
@@ -297,8 +331,8 @@ body {
     padding-top: 1.5rem;
   }
 
-  #pokemonOverlay {
-  }
+  /* #pokemonOverlay {
+  } */
 
   #overlayContent {
     width: 80vw;

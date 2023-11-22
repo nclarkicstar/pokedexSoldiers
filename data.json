@@ -1,0 +1,170 @@
+{
+  "Determinedragon": {
+    "type": "Dragon",
+    "abilities": ["Endurance", "Fortitude", "Resilience"],
+    "description": "Determinedragon embodies the spirit of perseverance, never yielding under pressure.",
+    "skilllevel1Name": "Stamina",
+    "skilllevel1Level": 13,
+    "skilllevel2Name": "Focus",
+    "skilllevel2Level": 12,
+    "skilllevel3Name": "Defense",
+    "skilllevel3Level": 14,
+    "strengths": [
+      "High resilience in adverse situations",
+      "Exceptional focus and dedication",
+      "Strong defensive capabilities"
+    ],
+    "weaknesses": [
+      "Inflexibility in adapting to changes",
+      "Over-reliance on endurance",
+      "May ignore alternative strategies"
+    ]
+  },
+  "Adaptox": {
+    "type": "Poison",
+    "abilities": ["Adaptability", "Toxic Boost", "Quick Reflexes"],
+    "description": "Adaptox can adapt to various environments and uses its toxic powers to defend itself.",
+    "skilllevel1Name": "Agility",
+    "skilllevel1Level": 14,
+    "skilllevel2Name": "Problem Solving",
+    "skilllevel2Level": 12,
+    "skilllevel3Name": "Stealth",
+    "skilllevel3Level": 11,
+    "strengths": [
+      "Excellent adaptability in diverse environments",
+      "Quick thinking and problem-solving skills",
+      "Stealthy, can surprise opponents"
+    ],
+    "weaknesses": [
+      "Less effective in stable, unchanging environments",
+      "May lack long-term focus",
+      "Overemphasis on adaptation can lead to lack of consistency"
+    ]
+  },
+  "Leaderaptor": {
+    "type": "Flying",
+    "abilities": ["Leadership", "Aerodynamic", "Strategic Planning"],
+    "description": "Leaderaptor soars the skies with great speed and is a natural leader among bird Pokémon.",
+    "skilllevel1Name": "Command",
+    "skilllevel1Level": 15,
+    "skilllevel2Name": "Tactical Awareness",
+    "skilllevel2Level": 14,
+    "skilllevel3Name": "Inspiration",
+    "skilllevel3Level": 13,
+    "strengths": [
+      "Natural leadership and command abilities",
+      "Strategic and tactical thinking",
+      "Inspirational presence that boosts team morale"
+    ],
+    "weaknesses": [
+      "Tendency to shoulder too much responsibility",
+      "Can be overbearing in leadership",
+      "May struggle in non-leadership roles"
+    ]
+  },
+  "Teamander": {
+    "type": "Fire",
+    "abilities": ["Team Spirit", "Flame Body", "Synergy"],
+    "description": "Teamander’s fiery spirit rallies its companions, and its flame-covered body keeps foes at bay.",
+    "skilllevel1Name": "Collaboration",
+    "skilllevel1Level": 13,
+    "skilllevel2Name": "Morale Boost",
+    "skilllevel2Level": 14,
+    "skilllevel3Name": "Adaptability",
+    "skilllevel3Level": 12,
+    "strengths": [
+      "Excellent at fostering team collaboration",
+      "Boosts team morale and effectiveness",
+      "Adaptable to team needs"
+    ],
+    "weaknesses": [
+      "Dependent on team dynamics",
+      "Less effective in solo tasks",
+      "May avoid taking initiative independently"
+    ]
+  },
+  "Friendlebub": {
+    "type": "Fairy",
+    "abilities": ["Friendship", "Healing Aura", "Empathy"],
+    "description": "Friendlebub's presence brings joy and healing, making it a beloved companion.",
+    "skilllevel1Name": "Social Skills",
+    "skilllevel1Level": 15,
+    "skilllevel2Name": "Emotional Intelligence",
+    "skilllevel2Level": 14,
+    "skilllevel3Name": "Conflict Resolution",
+    "skilllevel3Level": 13,
+    "strengths": [
+      "Great at building and maintaining relationships",
+      "High emotional intelligence",
+      "Ability to diffuse conflicts and tension"
+    ],
+    "weaknesses": [
+      "Avoidance of confrontations",
+      "Can be overly accommodating",
+      "May prioritize harmony over difficult decisions"
+    ]
+  },
+  "Creativire": {
+    "type": "Psychic",
+    "abilities": ["Creativity", "Mind Bend", "Imagination"],
+    "description": "Creativire uses its psychic powers to unleash creative energy and outsmart opponents.",
+    "skilllevel1Name": "Innovation",
+    "skilllevel1Level": 15,
+    "skilllevel2Name": "Artistic Expression",
+    "skilllevel2Level": 14,
+    "skilllevel3Name": "Flexibility",
+    "skilllevel3Level": 12,
+    "strengths": [
+      "Exceptionally creative and innovative",
+      "Strong artistic expression and imagination",
+      "Flexibility in thought and approach"
+    ],
+    "weaknesses": [
+      "Struggles with routine and structure",
+      "Can be impractical in ideas",
+      "May overlook details in pursuit of creativity"
+    ]
+  },
+  "Curiospike": {
+    "type": "Electric",
+    "abilities": ["Curiosity", "Static", "Investigation"],
+    "description": "Curiospike's electric nature is matched by its boundless curiosity and ability to generate powerful shocks.",
+    "skilllevel1Name": "Inquisitiveness",
+    "skilllevel1Level": 14,
+    "skilllevel2Name": "Analysis",
+    "skilllevel2Level": 15,
+    "skilllevel3Name": "Learning Speed",
+    "skilllevel3Level": 13,
+    "strengths": [
+      "High level of curiosity and inquisitiveness",
+      "Excellent analytical and investigative skills",
+      "Quick learner and adaptable to new knowledge"
+    ],
+    "weaknesses": [
+      "Can become overly absorbed in details",
+      "Might neglect broader perspectives",
+      "Prone to distraction by new information"
+    ]
+  },
+  "Optimibright": {
+    "type": "Light",
+    "abilities": ["Optimism", "Radiance", "Inspirational Aura"],
+    "description": "Optimibright shines bright even in the darkest times, inspiring hope with its radiant light.",
+    "skilllevel1Name": "Positive Influence",
+    "skilllevel1Level": 15,
+    "skilllevel2Name": "Emotional Resilience",
+    "skilllevel2Level": 14,
+    "skilllevel3Name": "Motivation",
+    "skilllevel3Level": 13,
+    "strengths": [
+      "Radiates positivity and optimism",
+      "Emotional resilience in challenging times",
+      "Motivating and uplifting presence"
+    ],
+    "weaknesses": [
+      "Can be overly idealistic",
+      "May underestimate challenges",
+      "Tendency to ignore negative aspects"
+    ]
+  }
+}
