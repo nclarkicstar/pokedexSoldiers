@@ -1,0 +1,307 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --pokedex_red: #be084e;
+  --pokedex_darker: #a70c48;
+  --pokedex_shaded: #950b40;
+  --sharpBorders: 10px;
+  --smoothBorders: 50px;
+}
+
+@font-face {
+  font-family: "minecraft";
+  src: url("fonts/Minecraft.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Unown-OVEwA";
+  src: url("fonts/Unown-OVEwA.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: #558959;
+}
+.unownText {
+  font-family: "Unown-OVEwA", sans-serif;
+}
+
+.pixelFont {
+  font-family: "minecraft", sans-serif;
+}
+
+.header {
+  text-align: center;
+  /* max-height: 100px; */
+  /* line-height: 100px; */
+  white-space: nowrap; /* Prevent text from wrapping */
+  max-width: 100vw; /* Limit the width to the viewport width */
+  overflow: hidden; /* Hide any overflow */
+  background-color: hsla(337, 24%, 56%, 0.417);
+  margin-bottom: 1rem;
+  max-width: 100vw;
+  /* max-height: 100px; */
+  width: 100vw;
+  font-size: 50px;
+  font-weight: 900;
+  padding: 0;
+}
+
+.imageGrid {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  text-align: center;
+  background-color: var(--pokedex_red);
+  width: fit-content;
+  max-width: 100%;
+  line-height: 100%;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  max-height: fit-content;
+  border: 0.5vw solid black;
+  border-radius: var(--sharpBorders);
+  /* height: 50vh; */
+}
+
+.imageGrid img {
+  max-width: 100%;
+  height: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.gridImage:hover {
+  background-color: var(--pokedex_shaded);
+}
+
+.gridImage {
+  max-width: 100%;
+  transition: background-color 0.3s ease;
+  max-height: 100%;
+  border-radius: var(--sharpBorders);
+  /* height: 100%; */
+  background-color: var(--pokedex_darker);
+  margin: 0;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  object-fit: contain;
+  padding: 0;
+  height: 10vw;
+  width: 10vw;
+}
+
+.background {
+  position: fixed;
+  background-color: #9dbba0;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  background-image: url("images/grass.png");
+  background-size: auto;
+  /* background-repeat: repeat-y; */
+  /* background-repeat: repeat-x; */
+  background-position: center center;
+  filter: blur(5px);
+  z-index: -999999;
+  animation: grass infinite 3s linear reverse;
+  margin-left: -10vw;
+  margin-top: -10vw;
+  overflow-x: hidden;
+  padding: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+.background {
+  width: 140vw;
+  height: 140vh;
+}
+.pokemonName {
+  display: flex;
+  justify-content: center;
+  height: 100%; /* Adjust this to the height of the parent container if necessary */
+  margin-top: 0; /* Reduced space above the name */
+  margin-bottom: 1rem; /* Adjust this value as needed */
+  padding-top: 0.5rem;
+}
+@keyframes grass {
+  0% {
+    translate: -10px 10px;
+  }
+  25% {
+    translate: 10px 10px;
+  }
+  50% {
+    translate: 10px -10px;
+  }
+  75% {
+    translate: -10px -10px;
+  }
+  100% {
+    translate: -10px 10px;
+  }
+}
+@keyframes slideIn {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.overlay-slide-out {
+  animation: slideOut 0.5s ease forwards;
+}
+
+.overlay-fade-out {
+  animation: fadeOut 0.5s ease forwards;
+}
+
+#pokemonOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(
+    0,
+    0,
+    0,
+    0.8
+  ); /* Set the desired background color and opacity */
+  display: none; /* Hidden by default */
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0; /* Start fully transparent */
+  /* Fade-in animation for the background */
+  animation: fadeIn 0.5s ease forwards;
+}
+
+#overlayContent {
+  background: var(--pokedex_red);
+  padding: 20px;
+  border: 0.5vw solid black;
+  border-radius: var(--sharpBorders);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+  /* Start from below the screen */
+  transform: translateY(100%);
+  /* Slide-in animation for the content */
+  animation: slideIn 0.5s ease forwards;
+}
+
+#overlayImage {
+  max-width: 80%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+#closeOverlay {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: var(--pokedex_darker);
+  color: white;
+  border: none;
+  border-radius: var(--sharpBorders);
+  width: 30px;
+  height: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#closeOverlay {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: var(--pokedex_darker);
+  color: white;
+  border: none;
+  border-radius: var(--sharpBorders);
+  width: 30px;
+  height: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .background {
+    overflow-x: hidden;
+  }
+  .header {
+    font-size: 3rem;
+  }
+
+  .imageGrid {
+    margin: 0 autos;
+  }
+
+  .imageGrid img {
+    max-width: 100%;
+    height: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
+
+  .gridImage {
+    max-width: 100%;
+    transition: background-color 0.3s ease;
+    max-height: 100%;
+    border-radius: var(--sharpBorders);
+    background-color: var(--pokedex_darker);
+    margin: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    object-fit: contain;
+    height: 20vw;
+    width: 20vw;
+    padding: 1rem;
+  }
+  .imageGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pokemonName {
+    margin-bottom: 0; /* Adjust this value as needed */
+    padding-top: 1.5rem;
+  }
+}
+
+body {
+  overflow-x: hidden;
+}
