@@ -27,6 +27,7 @@
       }
       .unownText {
         font-family: "Unown-OVEwA", sans-serif;
+        color: #558959;
       }
       .header {
         text-align: center;
@@ -98,15 +99,15 @@
         display: block;
         background-image: url("images/grass.png");
         background-size: auto;
-        background-repeat: repeat-y 5;
-        background-repeat: repeat-x 5;
+        /* background-repeat: repeat-y; */
+        /* background-repeat: repeat-x; */
         background-position: center center;
         filter: blur(5px);
         z-index: -999999;
         animation: grass infinite 3s linear reverse;
         margin-left: -10vw;
         margin-top: -10vw;
-        overflow: hidden;
+        overflow-x: hidden;
         padding: 0;
         margin-right: 0;
         margin-left: 0;
@@ -134,12 +135,12 @@
         }
       }
       body {
-        overflow: hidden;
+        overflow-x: hidden;
       }
 
       @media only screen and (max-width: 600px) {
         .background {
-          overflow: hidden;
+          overflow-x: hidden;
         }
         .header {
           font-size: 3rem;
