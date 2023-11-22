@@ -22,6 +22,9 @@
         font-style: normal;
       }
 
+      body {
+        background-color: #558959;
+      }
       .unownText {
         font-family: "Unown-OVEwA", sans-serif;
       }
@@ -32,13 +35,14 @@
         white-space: nowrap; /* Prevent text from wrapping */
         max-width: 100vw; /* Limit the width to the viewport width */
         overflow: hidden; /* Hide any overflow */
-        background-color: hsla(337, 92%, 39%, 0.141);
+        background-color: hsla(337, 24%, 56%, 0.417);
         margin-bottom: 1rem;
         max-width: 100vw;
         /* max-height: 100px; */
         width: 100vw;
         font-size: 50px;
         font-weight: 900;
+        padding: 0;
       }
 
       .imageGrid {
@@ -87,20 +91,31 @@
       }
 
       .background {
-        width: 120vw;
-        height: 120vh;
+        background-color: #9dbba0;
+        width: 100vw;
+        height: 100vh;
         display: block;
         background-image: url("images/grass.png");
-        background-size: cover;
-        background-repeat: no-repeat;
+        background-size: auto;
+        background-repeat: repeat-y 5;
+        background-repeat: repeat-x 5;
         background-position: center center;
         filter: blur(5px);
         z-index: -999999;
         position: absolute;
-        animation: grass infinite 15s linear reverse;
+        animation: grass infinite 3s linear reverse;
         margin-left: -10vw;
         margin-top: -10vw;
+        overflow: hidden;
+        padding: 0;
+        margin-right: 0;
+        margin-left: 0;
       }
+      .background {
+        width: 140vw;
+        height: 140vh;
+      }
+
       @keyframes grass {
         0% {
           translate: -10px 10px;
@@ -114,15 +129,24 @@
         75% {
           translate: -10px -10px;
         }
-
         100% {
           translate: -10px 10px;
         }
       }
+      body {
+        overflow: hidden;
+      }
 
       @media only screen and (max-width: 600px) {
+        .background {
+          overflow: hidden;
+        }
         .header {
           font-size: 3rem;
+        }
+
+        .imageGrid {
+          margin: 0 autos;
         }
 
         .imageGrid img {
