@@ -84,7 +84,7 @@ function openEggOverlay() {
                     <h3 class="type">Type: ${pokemonData.type}</h3>
                     <h4>Abilities: ${pokemonData.abilities.join(", ")}</h4>
                     <p>${pokemonData.description}</p>
-                    <h4>Strengths:</h4>
+                    <h4>Github:</h4>
                     <ul>${pokemonData.strengths
                       .map(
                         (strength) =>
@@ -96,22 +96,34 @@ function openEggOverlay() {
                         .map((weakness) => `<li>${weakness}</li>`)
                         .join("")}</ul>
                         
+                        <!--  
                         <div class="skill-bars">
                         <p>Skills</p>
-                          ${createSkillBar(
-                            pokemonData.skilllevel1Name,
-                            pokemonData.skilllevel1Level
-                          )}
-                          ${createSkillBar(
-                            pokemonData.skilllevel2Name,
-                            pokemonData.skilllevel2Level
-                          )}
-                          ${createSkillBar(
-                            pokemonData.skilllevel3Name,
-                            pokemonData.skilllevel3Level
-                          )}
+                        // move skillbar here if wanted
+                        // move skillbar here if wanted
+                        // move skillbar here if wanted
+                        // move skillbar here if wanted
                         </div>
+                        -->
                   `;
+        //         <!-- skillbar to move up if wanted -->
+        //         <!-- skillbar to move up if wanted -->
+        //         <!-- skillbar to move up if wanted -->
+        //   ${createSkillBar(
+        //     pokemonData.skilllevel1Name,
+        //     pokemonData.skilllevel1Level
+        //   )}
+        //     ${createSkillBar(
+        //       pokemonData.skilllevel2Name,
+        //       pokemonData.skilllevel2Level
+        //     )}
+        //     ${createSkillBar(
+        //       pokemonData.skilllevel3Name,
+        //       pokemonData.skilllevel3Level
+        //     )}
+        //         <!-- skillbar to move up if wanted -->
+        //         <!-- skillbar to move up if wanted -->
+        //         <!-- skillbar to move up if wanted -->
       }
     })
     .catch((error) => console.error("Error:", error));
