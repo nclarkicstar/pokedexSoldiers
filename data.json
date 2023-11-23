@@ -168,16 +168,17 @@
     ]
   },
   "Nathan": {
-    "type": "Normal",
-    "abilities": ["Linkedin"],
-    "description": "https://www.linkedin.com/in/nathanclark88",
+    "type": " Personal & Professional Master",
+    "abilities": [""],
+    "description": "Nathan has a great team of both personal and professional Pokémon Buffalo soldiers. Nathan has the ability to use any soldier when they are most needed. He has the ability to recall a soldier at any time and bring a more effective soldier out, or he can bring out multiple soldiers to support each other at any time of war or peace. With his team of soldiers, Nathan can handle any situation.",
     "skilllevel1Name": "Positive Influence",
     "skilllevel1Level": 15,
     "skilllevel2Name": "Emotional Resilience",
-    "skilllevel2Level": 14,
+    "skilllevel2Level": 15,
     "skilllevel3Name": "Motivation",
-    "skilllevel3Level": 13,
-    "strengths": ["https://github.com/nclarkicstar"],
-    "weaknesses": ["nathanclark88@yahoo.com"]
+    "skilllevel3Level": 15,
+    "github": ["https://github.com/nclarkicstar"],
+    "email": ["nathanclark88@yahoo.com"],
+    "linkedin": "https://www.linkedin.com/in/nathanclark88"
   }
 }

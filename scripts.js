@@ -92,54 +92,30 @@ function openEggOverlay() {
       const pokemonData = data[pokemonName];
       if (pokemonData) {
         overlayText.innerHTML = `
+        
                     <h3 class="type">Type: ${pokemonData.type}</h3>
-                    <h4>LinkedIn: ${pokemonData.abilities.join(", ")}</h4>
-                    <a target="_blank" href=${pokemonData.description}>${
-          pokemonData.description
+                    <h4>Description:</h4>
+                    <h4>${pokemonData.description}</h4>
+                    <h4>LinkedIn: ${pokemonData.abilities.join("")}</h4>
+                    <a target="_blank" href=${pokemonData.linkedin}>${
+          pokemonData.linkedin
         }</a>
                     <h4>Github:</h4>
-                    <ul>${pokemonData.strengths
+                    <ul>${pokemonData.github
                       .map(
-                        (strength) =>
-                          `<li><a target="_blank" href=${strength}>${strength}</a></li>`
+                        (github) =>
+                          `<li><a target="_blank" href=${github}>${github}</a></li>`
                       )
                       .join("")}</ul>
-                      <h4>Email:</h4>
-                      <ul>${pokemonData.weaknesses
-                        .map(
-                          (weakness) =>
-                            `<li><a href=mailto:${weakness}>${weakness}</a></li>`
-                        )
-                        .join("")}</ul>
-                        
-                        <!--  
-                        <div class="skill-bars">
-                        <p>Skills</p>
-                        // move skillbar here if wanted
-                        // move skillbar here if wanted
-                        // move skillbar here if wanted
-                        // move skillbar here if wanted
-                        </div>
-                        -->
-                  `;
-        //         <!-- skillbar to move up if wanted -->
-        //         <!-- skillbar to move up if wanted -->
-        //         <!-- skillbar to move up if wanted -->
-        //   ${createSkillBar(
-        //     pokemonData.skilllevel1Name,
-        //     pokemonData.skilllevel1Level
-        //   )}
-        //     ${createSkillBar(
-        //       pokemonData.skilllevel2Name,
-        //       pokemonData.skilllevel2Level
-        //     )}
-        //     ${createSkillBar(
-        //       pokemonData.skilllevel3Name,
-        //       pokemonData.skilllevel3Level
-        //     )}
-        //         <!-- skillbar to move up if wanted -->
-        //         <!-- skillbar to move up if wanted -->
-        //         <!-- skillbar to move up if wanted -->
+                        <h4>Email:</h4>
+                        <ul>${pokemonData.email
+                          .map(
+                            (email) =>
+                              `<li><a href=mailto:${email}>${email}</a></li>`
+                          )
+                          .join("")}</ul>
+                            
+`;
       }
     })
     .catch((error) => console.error("Error:", error));
