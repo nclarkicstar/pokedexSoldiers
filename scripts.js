@@ -79,24 +79,41 @@ function openOverlay() {
   }, 10);
 }
 
+function animateAndHide() {
+  var element = document.getElementById("overlayImage");
+  element.classList.add("animate__hinge");
+
+  setTimeout(function () {
+    element.classList.remove("animate__hinge");
+    element.classList.add("hide");
+  }, 4000);
+}
+
+// Call the function to start the process
+
 function openEggOverlay() {
   const pokemonName = "Nathan";
   const overlay = document.getElementById("pokemonOverlay");
 
   document.getElementById("overlayName").textContent = pokemonName;
   document.getElementById("overlayImage").src = "images/bigTeam.png";
+  animateAndHide();
 
   fetch("data.json")
     .then((response) => response.json())
     .then((data) => {
       const pokemonData = data[pokemonName];
       if (pokemonData) {
+        document.getElementById("overlayImage").classList.add("animate__hinge");
+
         overlayText.innerHTML = `
         
                     <h3 class="type">Type: ${pokemonData.type}</h3>
                     <h4>Description:</h4>
                     <h4>${pokemonData.description}</h4>
-                    <h4>LinkedIn: ${pokemonData.abilities.join("")}</h4>
+                    <h4 class="">LinkedIn: ${pokemonData.abilities.join(
+                      ""
+                    )}</h4>
                     <a target="_blank" href=${pokemonData.linkedin}>${
           pokemonData.linkedin
         }</a>
