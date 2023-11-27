@@ -109,7 +109,7 @@ function openEggOverlay() {
         overlayText.innerHTML = `
         
                     <h3 class="type">Type: ${pokemonData.type}</h3>
-                    <h4>Description:</h4>
+                    <h4>War & Peace:</h4>
                     <h4>${pokemonData.description}</h4>
                     <h4 class="">LinkedIn: ${pokemonData.abilities.join(
                       ""
