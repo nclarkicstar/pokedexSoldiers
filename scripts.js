@@ -199,12 +199,12 @@ function openWarPlanOverlay() {
   <h4>Step 1: Assessment</h4>
   <p>This is a tough situation, and you need to keep a clear mind to handle it. <strong>Friendlebub</strong> uses its <em>Empathy</em> ability to make sure everyone keeps a clear mind.</p>
   <h4>Step 2: Approach</h4>
-  <p>Once you have used your clear mind to think of an approach to this situation, <strong>Leaderaptor</strong> uses its <em>strategic planning and leadership</em> to take initiative and kicks off this defensive war strategy</p>
+  <p>Once you have used your clear mind to think of an approach to this situation, <strong>Leaderaptor</strong> uses its <em>strategic planning and leadership</em> to take initiative and kicks off this defensive war strategy.</p>
   <h4>Step 3: Stay Positive</h4>
   <p>This approach needs to be respectful even if it is an attack on yourself. <strong>Optimibright</strong> shines bright in this part of the scenario. They use <em>optimism</em> to shine bright even in this dark time.</p>
   <h4>Step 5: Resolve</h4>
   <p>You know you are being falsely accused and you have to do something to convice everyone you are correct. <strong>Determinedragon</strong> steps in with great <em>resilience</em> and <em>fortitude</em> to keep fighting under this pressure.</p>
-  <p>Eventually, this war comes to an end. Your buffalo soldiers have helped you through this scenario thanks to you knowing how to properly use them</p>
+  <p>Eventually, this war comes to an end. Your buffalo soldiers have helped you through this scenario thanks to you knowing how to properly use them.</p>
   <h4>Step 6: Restore lost bonds</h4>
   <p>Now that all the conflict is gone, it's time to heal. <strong>Teamander</strong> joins the scene and uses its <em>team spirit</em> powers to bring the team closer together and learn from this conflict.</p>
 `;
@@ -216,18 +216,18 @@ function openPeacePlanOverlay() {
   document.getElementById("overlayName").textContent = "Peace Plan";
   document.getElementById("overlayImage").src = "images/team.png";
   document.getElementById("overlayText").innerHTML = `
-  <h3 class="type">Strategy: </h3>
-  <h4>Improving You Team Dynamics</h4>
+  <h3 class="type">Strategy:</h3>
+  <h4>Improving Your Team Dynamics</h4>
   <h4>You are working in a small team and want to build a stronger bond and better team. Here is a peace plan to do so.</h4>
   <h4>Step 1: Determine Situation</h4>
-  <p>You first need to take a step back and think bout this scenario. <strong>Curiospike</strong> uses its <em>investigation</em> and <em>curiosity</em> skills to help you think of new ways to improve your team</p>
+  <p>You first need to take a step back and think about this scenario. <strong>Curiospike</strong> uses its <em>investigation</em> and <em>curiosity</em> skills to help you think of new ways to improve your team.</p>
   <h4>Step 2: Planning</h4>
-  <p>Now that you have determined areas for improvement, <strong>Creativire</strong> uses its stront<em>creativity</em> and <em>imagination</em> to come up with unique and powerful solutions</p>
-  <p><strong>Creativire</strong> is the perfect soldier for this situation, as all solutions are not always obvious. You need to be creative to find the perfect one</p>
+  <p>Now that you have determined areas for improvement, <strong>Creativire</strong> uses its strong <em>creativity</em> and <em>imagination</em> to come up with unique and powerful solutions.</p>
+  <p><strong>Creativire</strong> is the perfect soldier for this situation, as all solutions are not always obvious. You need to be creative to find the perfect one.</p>
   <h4>Step 3: Execution</h4>
-  <p>Now it's time to execute the creative solution. Change is not easy for everyone so <strong>Adaptox</strong> steps in with <strong>Teamander</strong>. Together they use their skills of <em>adaptability</em> and <em>teamwork</em> to make sure the solution can be implemented easily</p>
+  <p>Now it's time to execute the creative solution. Change is not easy for everyone, so <strong>Adaptox</strong> steps in with <strong>Teamander</strong>. Together, they use their skills of <em>adaptability</em> and <em>teamwork</em> to make sure the solution can be implemented easily.</p>
   <h4>Step 4: Benefit</h4>
-  <p>Congratulations! You have used a mix of personal and professional soldiers to create a plan to bennefit your team and execute it. The last step is to embrace it. <strong>Optimibright</strong> joins the team and uses <em>optimism</em> to embrace this new plan in place</p>
+  <p>Congratulations! You have used a mix of personal and professional soldiers to create a plan to benefit your team and execute it. The last step is to embrace it. <strong>Optimibright</strong> joins the team and uses <em>optimism</em> to embrace this new plan in place.</p>
 `;
   showOverlay();
 }
