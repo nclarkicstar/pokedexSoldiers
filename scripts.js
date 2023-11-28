@@ -194,10 +194,20 @@ function openWarPlanOverlay() {
   document.getElementById("overlayName").textContent = "War Plan";
   document.getElementById("overlayImage").src = "images/team.png";
   document.getElementById("overlayText").innerHTML = `
-    <h3 class="type">Strategy: </h3>
-    <h4>Description:</h4>
-    <p></p>
-  `;
+  <h3 class="type">Strategy: Calm and resiliant</h3>
+  <h4>You have been falsely accused of taking someone's work</h4>
+  <h4>Step 1: Assessment</h4>
+  <p>This is a tough situation, and you need to keep a clear mind to handle it. <strong>Friendlebub</strong> uses its <em>Empathy</em> ability to make sure everyone keeps a clear mind.</p>
+  <h4>Step 2: Approach</h4>
+  <p>Once you have used your clear mind to think of an approach to this situation, <strong>Leaderaptor</strong> uses its <em>strategic planning and leadership</em> to take initiative and kicks off this defensive war startegy</p>
+  <h4>Step #3: Stay Positive</h4>
+  <p>This approach needs to be respectful even if it is an attack on yourself. <strong>Optimibright</strong> shines bright in this part of the scenario. They use <em>optimism </em> to shine bright even in this dark time.</p>
+  <h4>Step 5: Resolve</h4>
+  <p>You know you are being falsely accusd and you have do do something to convice everyone you are corrrect. <strong>Determinedragon</strong> steps in with great <em>resilience</em> and <em>fortitude</em> to keep fighting under this pressure.</p>
+  <p>Eventually, this war comes to an end. Your buffalo soldiers have helped you through this scenario thanks to you knowing how to properly use them</p>
+  <h4>Step 6: Restore lost bonds</h4>
+  <p>Now that all the conflict is gone, its time to heal. <strong>Teamander</strong> joins the scene and uses its <em>team spirit</em> powers to bring the team closer together and learn from this conflict.</p>
+`;
   showOverlay();
 }
 
@@ -206,10 +216,16 @@ function openPeacePlanOverlay() {
   document.getElementById("overlayName").textContent = "Peace Plan";
   document.getElementById("overlayImage").src = "images/team.png";
   document.getElementById("overlayText").innerHTML = `
-    <h3 class="type">Strategy: </h3>
-    <h4></h4>
-    <p></p>
-  `;
+  <h3 class="type">Strategy: </h3>
+  <h4>You have been falsely accused of taking someone's work</h4>
+  <h4>Step 1: Assessment</h4>
+  <p><strong>NameHere</strong> <em>AbilityHere</em> </p>
+
+  <h4>Step 2: Approach</h4>
+  <h4>Step #3: Stay Positive</h4>
+  <h4>Step 5: Resolve</h4>
+  <h4>Step 6: Restore lost bonds</h4>
+`;
   showOverlay();
 }
 
