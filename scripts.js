@@ -217,14 +217,17 @@ function openPeacePlanOverlay() {
   document.getElementById("overlayImage").src = "images/team.png";
   document.getElementById("overlayText").innerHTML = `
   <h3 class="type">Strategy: </h3>
-  <h4>You have been falsely accused of taking someone's work</h4>
-  <h4>Step 1: Assessment</h4>
-  <p><strong>NameHere</strong> <em>AbilityHere</em> </p>
-
-  <h4>Step 2: Approach</h4>
-  <h4>Step #3: Stay Positive</h4>
-  <h4>Step 5: Resolve</h4>
-  <h4>Step 6: Restore lost bonds</h4>
+  <h4>Improving You Team Dynamics</h4>
+  <h4>You are working in a small team and want to build a stronger bond and better team. Here is a peace plan to do so.</h4>
+  <h4>Step 1: Determine Situation</h4>
+  <p>You first need to take a step back and think bout this scenario. <strong>Curiospike</strong> uses its <em>investigation</em> and <em>curiosity</em> skills to help you think of new ways to improve your team</p>
+  <h4>Step 2: Planning</h4>
+  <p>Now that you have determined areas for improvement, <strong>Creativire</strong> uses its stront<em>creativity</em> and <em>imagination</em> to come up with unique and powerful solutions</p>
+  <p><strong>Creativire</strong> is the perfect soldier for this situation, as all solutions are not always obvious. You need to be creative to find the perfect one</p>
+  <h4>Step 3: Execution</h4>
+  <p>Now it's time to execute the creative solution. Change is not easy for everyone so <strong>Adaptox</strong> steps in with <strong>Teamander</strong>. Together they use their skills of <em>adaptability</em> and <em>teamwork</em> to make sure the solution can be implemented easily</p>
+  <h4>Step 4: Benefit</h4>
+  <p>Congratulations! You have used a mix of personal and professional soldiers to create a plan to bennefit your team and execute it. The last step is to embrace it. <strong>Optimibright</strong> joins the team and uses <em>optimism</em> to embrace this new plan in place</p>
 `;
   showOverlay();
 }
