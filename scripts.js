@@ -194,7 +194,7 @@ function openWarPlanOverlay() {
   document.getElementById("overlayName").textContent = "War Plan";
   document.getElementById("overlayImage").src = "images/team.png";
   document.getElementById("overlayText").innerHTML = `
-  <h3 class="type">Strategy: Calm and resilient</h3>
+  <h3 class="type">Strategy: Calm and Resilient</h3>
   <h4>You have been falsely accused of taking someone's work</h4>
   <h4>Step 1: Assessment</h4>
   <p>This is a tough situation, and you need to keep a clear mind to handle it. <strong>Friendlebub</strong> uses its <em>Empathy</em> ability to make sure everyone keeps a clear mind.</p>
@@ -216,7 +216,7 @@ function openPeacePlanOverlay() {
   document.getElementById("overlayName").textContent = "Peace Plan";
   document.getElementById("overlayImage").src = "images/team.png";
   document.getElementById("overlayText").innerHTML = `
-  <h3 class="type">Strategy:</h3>
+  <h3 class="type">Strategy: Optimism and Creativity</h3>
   <h4>Improving Your Team Dynamics</h4>
   <h4>You are working in a small team and want to build a stronger bond and better team. Here is a peace plan to do so.</h4>
   <h4>Step 1: Determine Situation</h4>
