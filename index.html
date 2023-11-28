@@ -20,10 +20,26 @@
       <img
         src="images/eggJumping.gif"
         alt="Egg Jumping"
-        class="jumpingEgg"
+        class="buttonStyle jumpingEgg"
         id="eggImage"
       />
       <span class="unownText">Buffalo <br />Soldiers</span>
+
+      <!-- Container for right-aligned buttons -->
+      <div class="rightButtons">
+        <img
+          src="images/peace.png"
+          alt="button for peace"
+          class="buttonStyle jumpingPeace"
+          id="peacePlanButton"
+        />
+        <img
+          src="images/war.png"
+          alt="button for war"
+          class="buttonStyle jumpingWar"
+          id="warPlanButton"
+        />
+      </div>
     </div>
 
     <div class="imageGrid">
@@ -65,16 +81,29 @@
         <button id="closeOverlay">X</button>
         <div id="leftSide">
           <img id="overlayImage" src="" alt="Pokemon Image" />
-
-          <!-- <button class="arrow-button" id="prevPokemon">&#8592;</button> -->
           <div id="overlayName" class="pokemonName pixelFont"></div>
-          <!-- <button class="arrow-button" id="nextPokemon">&#8594;</button> -->
         </div>
         <div id="rightSide">
           <div id="overlayText"></div>
         </div>
       </div>
     </div>
+
+    <!-- <div id="warPlanOverlay" class="overlay">
+      <div class="overlayContent">
+        <button class="closeOverlay">X</button>
+        <h2>War Plan</h2>
+        <p>Details about the War Plan...</p>
+      </div>
+    </div>
+
+    <div id="peacePlanOverlay" class="overlay">
+      <div class="overlayContent">
+        <button class="closeOverlay">X</button>
+        <h2>Peace Plan</h2>
+        <p>Details about the Peace Plan...</p>
+      </div>
+    </div> -->
 
     <script src="scripts.js"></script>
   </body>

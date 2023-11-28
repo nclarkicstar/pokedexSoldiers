@@ -90,7 +90,7 @@ body {
 } */
 
 .jumpingEgg {
-  position: absolute;
+  /* position: absolute; */
   float: left;
   height: 100px;
   top: 0;
@@ -547,6 +547,9 @@ body {
   display: none;
 }
 
+.planButton {
+  width: 100px;
+}
 /*  */
 /*  */
 /*  */
@@ -768,3 +771,23 @@ body {
 /* .hide {
   opacity: 0;
 } */
+
+.buttonStyle {
+  cursor: pointer;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rightButtons {
+  display: flex;
+  gap: 10px;
+}
+
+.jumpingPeace,
+.jumpingWar {
+  width: 100px;
+}

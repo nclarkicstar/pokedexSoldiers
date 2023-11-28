@@ -11,6 +11,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const closeOverlayButton = document.getElementById("closeOverlay");
   closeOverlayButton.addEventListener("click", closeOverlay);
   closeOverlayButton.addEventListener("touchend", closeOverlay);
+  const warPlanButton = document.getElementById("warPlanButton");
+  warPlanButton.addEventListener("click", openWarPlanOverlay);
+
+  const peacePlanButton = document.getElementById("peacePlanButton");
+  peacePlanButton.addEventListener("click", openPeacePlanOverlay);
 
   const eggImage = document.getElementById("eggImage");
   eggImage.addEventListener("click", openEggOverlay);
@@ -109,7 +114,7 @@ function openEggOverlay() {
         overlayText.innerHTML = `
         
                     <h3 class="type">Type: ${pokemonData.type}</h3>
-                    <h4>War & Peace:</h4>
+                    <h4>Description:</h4>
                     <h4>${pokemonData.description}</h4>
                     <h4 class="">LinkedIn: ${pokemonData.abilities.join(
                       ""
@@ -177,3 +182,42 @@ document.addEventListener("keydown", function (event) {
     closeOverlay();
   }
 });
+
+const warPlanButton = document.getElementById("warPlanButton");
+warPlanButton.addEventListener("click", openWarPlanOverlay);
+
+const peacePlanButton = document.getElementById("peacePlanButton");
+peacePlanButton.addEventListener("click", openPeacePlanOverlay);
+
+function openWarPlanOverlay() {
+  const overlay = document.getElementById("pokemonOverlay");
+  document.getElementById("overlayName").textContent = "War Plan";
+  document.getElementById("overlayImage").src = "images/team.png";
+  document.getElementById("overlayText").innerHTML = `
+    <h3 class="type">Strategy: </h3>
+    <h4>Description:</h4>
+    <p></p>
+  `;
+  showOverlay();
+}
+
+function openPeacePlanOverlay() {
+  const overlay = document.getElementById("pokemonOverlay");
+  document.getElementById("overlayName").textContent = "Peace Plan";
+  document.getElementById("overlayImage").src = "images/team.png";
+  document.getElementById("overlayText").innerHTML = `
+    <h3 class="type">Strategy: </h3>
+    <h4></h4>
+    <p></p>
+  `;
+  showOverlay();
+}
+
+function showOverlay() {
+  const overlay = document.getElementById("pokemonOverlay");
+  overlay.style.display = "flex";
+  setTimeout(() => {
+    overlay.style.opacity = "1";
+    document.getElementById("overlayContent").style.transform = "translateY(0)";
+  }, 10);
+}
